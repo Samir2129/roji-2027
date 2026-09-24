@@ -1919,3 +1919,47 @@ footer {
     }
 
 }
+
+/* =========================================================
+   DAILY NOTE GIF
+   ========================================================= */
+
+.daily-gif-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0 26px;
+}
+
+.daily-note-gif {
+    display: none;
+    width: min(100%, 360px);
+    height: 230px;
+    object-fit: cover;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:
+        0 12px 40px rgba(255, 77, 180, 0.18),
+        0 0 30px rgba(255, 117, 247, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+.daily-note-gif:hover {
+    transform: translateY(-4px) scale(1.01);
+}
+
+@media (max-width: 600px) {
+    .daily-note-gif {
+        width: min(100%, 320px);
+        height: 210px;
+        border-radius: 18px;
+    }
+
+    .daily-gif-wrap {
+        margin: 20px 0 22px;
+    }
+}
