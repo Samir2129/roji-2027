@@ -13,7 +13,7 @@
 
 const BIRTHDAY_TIME = new Date(
     2027,
-    8,
+    7,
     29,
     0,
     0,
